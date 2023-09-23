@@ -20,17 +20,19 @@ export default function Skills(){
 
     return(
         <>
-            <div>
-                <div>
-                    <h1>My Skills</h1>
-                </div>
-                <div>
-                    {
-                        skillData.map((item,index) =><div>
-                            {<img key = {index} src={item.img} height={100} width={100}/>}
-                            {<h2>{item.name}</h2>}
-                        </div>)
-                    }
+            <div className="mySkills">
+                <div className="skill-container">
+                    <div className="skill-heading">
+                        <h1>My Skills</h1>
+                    </div>
+                    <div className="skill-content">
+                        {
+                            skillData.map((item,index) =><div className="skill" width ={200}>
+                                {<img key = {index} src={item.img} height={100} width={100}/>}
+                                {<h2>{item.name}</h2>}
+                            </div>)
+                        }
+                    </div>
                 </div>
             </div>
         </>

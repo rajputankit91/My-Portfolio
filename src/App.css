@@ -132,6 +132,100 @@ p{
   margin-top: 5rem;
   text-align: center;
 }
+
+.skill-container,.projects-container,.contact-container{
+  max-width: 120rem;
+  margin: auto;
+  width: 92%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 40rem;
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-container{
+  margin: 10px 50px 0px 0px;
+}
+
+.skill{
+  display: inline-block;
+  margin: 50px 50px;
+}
+
+.skill-heading,.projects-header,.contact-heading-box{
+  text-align: center;
+  font-size: 21px;
+  margin-bottom: 25%;
+}
+
+.skill-content,.projects-contents{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  /* background-color: #282938; */
+}
+
+.projects-content,.contact-form{
+  margin: 0px 25px;
+  border: 5px solid;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-color: #a09c9c;
+  font-size: 21px;
+}
+
+.contact-form{
+  min-width: 70%;
+  min-height: 250px;
+  border: none;
+}
+
+.contact-form-field{
+  margin: 10px;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.contact-form-field input,.contact-form-field label{
+  font-size: 25px;
+}
+
+#submitBtn{
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+#submitBtn:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.contact-description{
+  font-size: 18px;
+  color: #333;
+  padding: 20px;
+}
+
+.contact-heading-box{
+  margin: 20px 20px;
+}
+.contact-form-field{
+  font-size: 21px;
+}
+.projects{
+  box-shadow: 0 10px 100px rgba(0,0,0,.1);
+}
+
 .resume-download-btn{
   font-size: 37px;
   background: #7843e9;

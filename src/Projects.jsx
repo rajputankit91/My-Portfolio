@@ -17,21 +17,25 @@ export default function Projects(){
     ]
     return(
         <>
-            <div>
-                <div>
-                    <h1>My Projects</h1>
-                </div>
+            <div className="projects">
+                <div className="projects-container">
+                    <div className="projects-header">
+                        <h1 className="project-heading">My Projects</h1>
+                    </div>
 
-                <div>
-                    {
-                        projectsData.map((item,index) =><div>
-                            {<img src={item.url} height={180} width={200}/>}
-                            {<h3>{item.projectsName}</h3>}
-                            {<p>{item.descriptions}</p>}
-                            {<button>{item.githubBtn}</button>}
-                            {<button>{item.previewBtn}</button>}
-                        </div>)   
-                    }
+                    <div className="projects-contents">
+                        {
+                            projectsData.map((item,index) =><div className="projects-content">
+                                {<img src={item.url} height={180} width={200}/>}
+                                {<h3>{item.projectsName}</h3>}
+                                {<p>{item.descriptions}</p>}
+                                <div className="project-btn-box">
+                                    {<button>{item.githubBtn}</button>}
+                                    {<button>{item.previewBtn}</button>}
+                                </div>
+                            </div>)   
+                        }
+                    </div>
                 </div>
             </div>
         </>
