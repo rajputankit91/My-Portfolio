@@ -37,14 +37,15 @@ export default function Navbar(){
             <div className="logo-div">
                 <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/320400615/original/41ce77932062173d2a1dee0b20ebc305af0c2a8f/create-unique-and-eye-catching-logo-designs.png" height={100}
                 width={150}></img>
+                <span>Ankit Kumar</span>
             </div>
             <div className="nav-icon">
                 <ul className="navList">
-                    <li>Home</li>
-                    <li>Projects</li>
-                    <li>Skills</li>
-                    <li>About Me</li>
-                    <li>Contact Me</li>
+                    <li><a href="#mainSection">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </div>
 

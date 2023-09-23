@@ -20,14 +20,14 @@ export default function Skills(){
 
     return(
         <>
-            <div className="mySkills">
+            <div className="mySkills" id="skills">
                 <div className="skill-container">
                     <div className="skill-heading">
                         <h1>My Skills</h1>
                     </div>
                     <div className="skill-content">
                         {
-                            skillData.map((item,index) =><div className="skill" width ={200}>
+                            skillData.map((item,index) =><div className="skill" width ={100}>
                                 {<img key = {index} src={item.img} height={100} width={100}/>}
                                 {<h2>{item.name}</h2>}
                             </div>)

@@ -1,7 +1,7 @@
 export default function ContactMe(){
     return (
         <>
-            <div className="Contact">
+            <div className="Contact" id="contact">
                 <div className="contact-container">
 
                     <div className="contact-heading-box">

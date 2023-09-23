@@ -124,6 +124,22 @@ p{
   background: #fff;
   box-shadow: 0 10px 100px rgba(0,0,0,.1);
 }
+
+.logo-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-div span{
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
+.logo-div span:hover{
+  color: blue;
+  cursor: pointer;
+}
+
 .main-section-info{
   margin: 3rem auto 0 auto;
   max-width: 80rem;
@@ -132,7 +148,15 @@ p{
   margin-top: 5rem;
   text-align: center;
 }
+a{
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+}
 
+a:hover{
+  color: blue;
+}
 .skill-container,.projects-container,.contact-container{
   max-width: 120rem;
   margin: auto;
@@ -151,6 +175,9 @@ p{
   margin: 10px 50px 0px 0px;
 }
 
+.Contact{
+  box-shadow: 0 10px 100px rgba(0,0,0,.1);
+}
 .skill{
   display: inline-block;
   margin: 50px 50px;
