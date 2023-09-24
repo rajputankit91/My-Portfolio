@@ -15,6 +15,18 @@ export default function Skills(){
         {
             'name' : 'React.js',
             'img' : 'https://dineshrout.netlify.app/icons/react.svg'
+        },
+        {
+            'name' : 'Redux',
+            'img' : 'https://dineshrout.netlify.app/icons/redux.svg'
+        },
+        {
+            'name' : 'Git',
+            'img' : 'https://dineshrout.netlify.app/icons/git.svg'
+        },
+        {
+            'name' : 'GitHub',
+            'img' : 'https://dineshrout.netlify.app/icons/github.svg'
         }
     ]
 
