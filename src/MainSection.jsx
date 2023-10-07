@@ -1,21 +1,21 @@
+import React from 'react'
+import { pdfjs } from 'react-pdf'
 export default function MainSection(){
+    const downloadResume = () =>{
+        console.log('clicked')
+    }
+
     return (
         <section id = 'mainSection' className="main-section">
-            <div className="main-section-content-box">
-                <div className="main-section -container">
-                    <div className="main-section-content">
-                        <p>Hey, I'm Ankit Kumar</p>
-                        <div className="main-section-info">
-                            <span>A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</span>
-                        </div>
-                        <div className="main-section-btn">
-                            <button className="resume-download-btn">Download Resume</button>
-                        </div>
-                    </div>
+            <div className="section-container">
+                <div className="main-section-container">
+                    <div className='hello'>Hello 👋 I'm</div>
+                    <div className='my-name'>Ankit Kumar</div>
+                    <div className='text'>And I'm a front End Developer</div>
+                    <a className='resume' href="Ankit's Resume.pdf" download="Ankit's Resume.pdf" onClick={downloadResume}>
+                        Download Resume
+                    </a>
                 </div>
-            </div>
-            <div>
-
             </div>
         </section>
     )

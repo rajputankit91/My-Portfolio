@@ -17,15 +17,15 @@ export default function Projects(){
     ]
     return(
         <>
-            <div className="projects" id="projects">
-                <div className="projects-container">
+            <section className="projects" id="projects">
+                <div className="section-container">
                     <div className="projects-header">
                         <h1 className="project-heading">My Projects</h1>
                     </div>
 
                     <div className="projects-contents">
                         {
-                            projectsData.map((item,index) =><div className="projects-content">
+                            projectsData.map((item,index) =><div key={index} className="projects-content">
                                 {<img src={item.url} height={180} width={200}/>}
                                 {<h3>{item.projectsName}</h3>}
                                 {<p>{item.descriptions}</p>}
@@ -37,7 +37,7 @@ export default function Projects(){
                         }
                     </div>
                 </div>
-            </div>
+            </section>
         </>
     )
 }

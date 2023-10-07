@@ -40,7 +40,7 @@
 .read-the-docs {
   color: #888;
 } */
-body{
+/* body{
   margin: 0;
   font-family: "Roboto",sans-serif;
 }
@@ -61,9 +61,9 @@ p{
   --darkblue: #1c1e53;
   --black: #000000;
   --white: #ffffff;
-}
+} */
 
-.btn{
+/* .btn{
   font-family: 'Roboto';
   display: inline-block;
   padding: 14px 32px;
@@ -113,8 +113,9 @@ p{
 
 #mainSection{
   background: linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)),url(/daac885…/c157c/assets/svg/common-bg.svg);
-}
-.navbar{
+} */
+/*  */
+/* .navbar{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -157,6 +158,8 @@ a{
 
 a:hover{
   color: blue;
+  border-bottom: 1px solid blue;
+  transition: 0.1s;
 }
 
 .mySkills,.projects,.Contact{
@@ -167,9 +170,9 @@ a:hover{
   max-width: 120rem;
   margin: auto;
   width: 92%;
-}
+} */
 
-.skill{
+/* .skill{
   display: inline-block;
   margin: 50px 50px;  
 }
@@ -222,10 +225,6 @@ a:hover{
   min-width: 70%;
   min-height: 250px;
   border: none;
-}
-
-.contact-form{
-  
 }
 
 .contact-form-field{
@@ -290,6 +289,7 @@ input{
 
 .resume-download-btn:hover{
   transform: translatey(-8px);
+  cursor: pointer;
 }
 
 .main-section-info{
@@ -341,21 +341,196 @@ li{
   width: 60%;
   order: 1;
   max-width: 50rem;
+} */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 
+nav{
+  display: block;
+}
 
+.navbar{
+  position:fixed ;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 999;
+  transition: all 0.3s ease;
+  font-family: "Ubuntu", sans-serif;
+}
 
+.active{
+  background-color:crimson;
+}
 
+.active .section-container span{
+  color: white;
+}
 
+.navbar .section-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
+}
 
+.section-container{
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
 
+.logo-div a{
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Pacifico";
+  transition: all 0.3s ease;
+}
+.logo-div a:hover{
+  cursor:pointer;
+}
 
+.logo-div a span{
+  color: crimson;
+}
 
+.navList{
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
 
+.navList li{
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
 
+.navList li a{
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  /* color: #fff; */
+  transition: color 0.3s ease;
+}
 
+section{
+  padding: 100px 0;
+}
 
+.main-section{
+  display: flex;
+  background: url(https://chetannada.netlify.app/images/bannernew.jpg) no-repeat center;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  min-width: 500px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.main-section .section-container{
+  margin: auto 0 auto 40px;
+}
+
+ul{
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.navbar .section-container .navList li{
+  list-style: none;
+  display: inline-block;
+}
+
+.navbar .section-container .navList li a{
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.navbar .section-container .navList li a:hover{
+  color: crimson;
+}
+
+.hello{
+  font-size: 27px;
+}
+
+.my-name{
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+
+.text{
+font-size: 40px;
+margin: 5px 0;
+}
+
+.resume{
+  margin-right: 25px;
+}
+
+#mainSection .main-section-container a{
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 25px;
+  padding: 8px 20px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+
+#about,#skills,#projects,#contact,#footer{
+  font-family: "Poppins", sans-serif;
+}
+
+section .title{
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#about .about-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#about .about-content .left{
+  width: 45%;
+}
+
+#about .about-content .right{
+  width: 55%;
+  text-align: justify;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
 
 
 

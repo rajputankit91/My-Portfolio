@@ -8,11 +8,13 @@ import Skills from './Skills.jsx'
 import Projects from './Projects.jsx'
 import ContactMe from './ContactMe.jsx'
 import Footer from './Footer.jsx'
+import About from './About.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Navbar/>
     <Home/>
+    <About/>
     <Skills/>
     <Projects/>
     <ContactMe/>

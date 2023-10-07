@@ -1,7 +1,7 @@
 export default function ContactMe(){
     return (
         <>
-            <div className="Contact" id="contact">
+            <section className="Contact" id="contact">
                 <div className="contact-container">
 
                     <div className="contact-heading-box">
@@ -32,7 +32,7 @@ export default function ContactMe(){
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </>
     )
 }
