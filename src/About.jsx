@@ -7,7 +7,7 @@ export default function About(){
                 <h2 className='title'>About me</h2>
                 <div className='about-content'>
                     <div className='left'>
-                        <img src='' alt='my-photo'/>
+                        <img src="images/Ankit's ph.png" width={325} height={325} alt='my-photo'/>
                     </div>
                     <div className='right'>
                         <h2>I'm ankit kumar</h2>
