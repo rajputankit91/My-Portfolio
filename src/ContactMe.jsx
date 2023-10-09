@@ -26,17 +26,19 @@ export default function ContactMe(){
                         </div>
                         <div className="column right">
                             <div className="text">Message me</div>
-                            <form action="#">
+                            <form action="https://formspree.io/f/xwkdwgrq"
+                            method="POST"
+                            className="contact-inputs">
                                 <div className="fields">
                                     <div className="field name">
-                                        <input type='text' placeholder="Name"></input>
+                                        <input type='text' placeholder="Name" name="name"></input>
                                     </div>
                                     <div className="field email">
-                                    <input type='email' placeholder="Email"></input>
+                                    <input type='email' placeholder="Email" name="email"></input>
                                     </div>
                                 </div>
                                 <div className="fields">
-                                    <input type='text' placeholder="Subject"></input>
+                                    <input type='text' placeholder="Subject" name="message"></input>
                                 </div>
                                 <div className="fields textarea">
                                     <textarea cols="30" rows= "10" placeholder="Describe projects"></textarea>
