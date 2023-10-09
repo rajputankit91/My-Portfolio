@@ -518,7 +518,7 @@ section .title{
   font-family: "Ubuntu", sans-serif;
 }
 
-#about .about-content,#skills .skill-content{
+#about .about-content,#skills .skill-content, #contact .contact-content{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -542,8 +542,66 @@ section .title{
   color: #fff;
 }
 
-#skills .skill-content .column{
+#skills .skill-content .column, #contact .contact-content .column{
   width: calc(50% - 30px);
+}
+
+#contact .contact-content .column .text{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#contact .contact-content .column p{
+  justify-content: center;
+}
+#contact .contact-content .column .icons{
+  margin: 10px 0;
+}
+
+.row{
+  height: 65px;align-items: center;
+}
+
+.row p {
+  font-size: 18px;
+}
+
+#contact .right .text{
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+form{
+  display: block;
+}
+
+.fields{
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+form .name{
+  margin-right: 10px;
+  width: 48%;
+}
+
+form .email{
+  margin-left: 10px;
+  width: 48%;
+}
+
+form input{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
 }
 
 .info{
@@ -563,4 +621,103 @@ section .title{
 
 .info a h2{
   text-align: center;
+}
+
+/*  */
+
+.projects-contents{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin-right: 20px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 350px;
+  margin: 10px;
+  padding: 25px;
+  background-color: #111;
+  color: #fff;
+  border-radius: 10px;
+}
+.card img{
+  border-radius: 10px;
+  border: 2px solid crimson;
+  width: 300px;
+}
+
+.card h3{
+  letter-spacing: 0.2rem;
+  margin: 2px 0;
+  padding: 2px 0;
+}
+
+.card p{
+  margin: 5px 0px;
+}
+
+.card button{
+  border-radius: 10px;
+  margin-left: 10px;
+  width: 85px;
+  height: 35px;
+}
+
+.card button:hover{
+  background-color: crimson;
+  color: #fff;
+}
+
+.card .card-content:hover{
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+  
+}
+
+textarea{
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  padding: 0 15px;
+  padding-top: 15px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+#contact .right form .textarea{
+  height: 160px;
+  width: 100%;
+}
+
+#contact .right .button button{
+  height: 47px;
+  width: 220px;
+  border: 2px solid crimson;
+  background: crimson;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#contact .right .button button:hover{
+  background-color: #111;
+}
+
+footer{
+  background: #fff;
+  padding: 20px 23px;
+  color: #000;
+  text-align: center;
+}
+
+footer span a{
+  color: crimson;
 }

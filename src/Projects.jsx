@@ -8,30 +8,31 @@ export default function Projects(){
             'previewBtn' : 'Preview'
         },
         {
-            'projectsName' : 'ZeptoClone',
+            'projectsName' : 'Zepto Clone',
             'url' : '	https://jugalrajputportfolio.netlify.app/assets/zepto-8f2b31f4.png',
             'descriptions' : 'A website with rendering based on search and cart functionality.',
-            'githubBtn' : 'github',
+            'githubBtn' : 'Github',
             'previewBtn' : 'Preview'
         },
+        
     ]
     return(
         <>
             <section className="projects" id="projects">
                 <div className="section-container">
-                    <div className="projects-header">
-                        <h1 className="project-heading">My Projects</h1>
-                    </div>
+                    <h2 className="title">My Projects</h2>
 
                     <div className="projects-contents">
                         {
-                            projectsData.map((item,index) =><div key={index} className="projects-content">
-                                {<img src={item.url} height={180} width={200}/>}
-                                {<h3>{item.projectsName}</h3>}
-                                {<p>{item.descriptions}</p>}
-                                <div className="project-btn-box">
-                                    {<button>{item.githubBtn}</button>}
-                                    {<button>{item.previewBtn}</button>}
+                            projectsData.map((item,index) =><div key={index} className="card">
+                                <div className="card-content">
+                                    {<img src={item.url} height={180} width={200}/>}
+                                    {<h3>{item.projectsName}</h3>}
+                                    {<p>{item.descriptions}</p>}
+                                    <div className="project-btn-box">
+                                        {<button>{item.githubBtn}</button>}
+                                        {<button>{item.previewBtn}</button>}
+                                    </div>
                                 </div>
                             </div>)   
                         }

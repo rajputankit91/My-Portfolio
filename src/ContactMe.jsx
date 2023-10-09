@@ -2,33 +2,49 @@ export default function ContactMe(){
     return (
         <>
             <section className="Contact" id="contact">
-                <div className="contact-container">
+                <div className="section-container">
+                <h2 className="title">Contact me</h2>
 
-                    <div className="contact-heading-box">
-                        <h2>Contact</h2>
-                    </div>
-                    <div className="contact-description">
-                        <p>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
-                    </div>
-
-                    <div className="contact-form">
-                        <div className="contact-form-field">
-                            <label>Name : </label>
-                            <input type="text" placeholder="Enter Your Name"></input>
+                    <div className="contact-content">
+                        <div className="column left">
+                            <div className="text">Reach Out to me!</div>
+                            <p>Discuss a Project or just want to say Hi? My inbox is open for all.</p>
+                            <div className="icons">
+                                <div className="row">
+                                    <p>Name</p>
+                                    <p>Ankit Kumar</p>
+                                </div>
+                                <div className="row">
+                                    <p>Address</p>
+                                    <p>Bijnor, India</p>
+                                </div>
+                                <div className="row">
+                                    <p>E-mail</p>
+                                    <p>ankitrajput10791@gmail.com</p>
+                                </div>
+                            </div>
                         </div>
-
-                        <div className="contact-form-field">
-                            <label>Email : </label>
-                            <input type="email" placeholder="Enter Your Email"></input>
-                        </div>
-
-                        <div className="contact-form-field">
-                            <label>Message : </label>
-                            <input type="text" placeholder="Enter Your Message"></input>
-                        </div>
-
-                        <div className="contact-submit">
-                            <button type="submit" id="submitBtn">Submit</button>
+                        <div className="column right">
+                            <div className="text">Message me</div>
+                            <form action="#">
+                                <div className="fields">
+                                    <div className="field name">
+                                        <input type='text' placeholder="Name"></input>
+                                    </div>
+                                    <div className="field email">
+                                    <input type='email' placeholder="Email"></input>
+                                    </div>
+                                </div>
+                                <div className="fields">
+                                    <input type='text' placeholder="Subject"></input>
+                                </div>
+                                <div className="fields textarea">
+                                    <textarea cols="30" rows= "10" placeholder="Describe projects"></textarea>
+                                </div>
+                                <div className="button">
+                                    <button type="submit">Send Message</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
