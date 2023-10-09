@@ -3,7 +3,7 @@ export default function Footer(){
         <>
             <footer className="footer" id="footer">
                 <span>Created By 
-                    <a href="www.linkedin.com/in/ankit-kumar-5180b7283" target="_blank"> Ankit Kumar</a>
+                    <a href="https://www.linkedin.com/in/ankit-kumar-5180b7283/" target="_blank"> Ankit Kumar</a>
                 </span>
             </footer>
         </>
