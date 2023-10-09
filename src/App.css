@@ -349,6 +349,10 @@ li{
   text-decoration: none;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 nav{
   display: block;
 }
@@ -514,7 +518,7 @@ section .title{
   font-family: "Ubuntu", sans-serif;
 }
 
-#about .about-content{
+#about .about-content,#skills .skill-content{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -525,13 +529,38 @@ section .title{
   width: 45%;
 }
 
-#about .about-content .right{
+#about .about-content .right,#skills .skill-content .left{
   width: 55%;
   text-align: justify;
   line-height: 1.6;
   letter-spacing: 1px;
+  font-family: "Ubuntu", sans-serif;
 }
 
+.mySkills,.Contact{
+  background-color: #111;
+  color: #fff;
+}
 
+#skills .skill-content .column{
+  width: calc(50% - 30px);
+}
 
+.info{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* justify-content: space-between; */
+}
 
+.info a{
+  padding: 0 10px;
+}
+
+.info a img{
+  padding: 0 10px;
+}
+
+.info a h2{
+  text-align: center;
+}
