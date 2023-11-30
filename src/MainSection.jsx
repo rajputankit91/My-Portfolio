@@ -12,7 +12,7 @@ export default function MainSection(){
                     <div className='hello'>Hello 👋 I'm</div>
                     <div className='my-name'>Ankit Kumar</div>
                     <div className='text'>And I'm a front End Developer</div>
-                    <a className='resume' href="Ankit's Resume.pdf" download="Ankit's Resume.pdf" onClick={downloadResume}>
+                    <a className='resume' href="resume.pdf" download="resume.pdf" onClick={downloadResume}>
                         Download Resume
                     </a>
                 </div>
