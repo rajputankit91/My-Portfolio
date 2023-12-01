@@ -1,18 +1,19 @@
 import zeptoImage from '../images/zeptoImage.png';
 import gridlistImage from '../images/gridlistImage.png';
+import quizImage from '../images/quizImage.png';
 
 console.log(zeptoImage);
 export default function Projects(){
     const projectsData = [
         {
             'id' : '1',
-            'projectsName' : 'Grid Table',
-            'url' : gridlistImage,
-            'descriptions' : 'A table with CRUD functionality, sorting, and pagination.',
+            'projectsName' : 'Quiz App',
+            'url' : quizImage,
+            'descriptions' : 'A website is rendering quiz with next, previous and shows result functionality',
             'githubBtn' : 'Github',
             'previewBtn' : 'Preview',
-            'gitHubUrl' : 'https://github.com/aharankit/Grid-Table',
-            'previewUrl' : 'https://jsdata-table.netlify.app/',
+            'gitHubUrl' : 'https://github.com/aharankit/quizapplication',
+            'previewUrl' : 'https://sparkly-flan-6e912c.netlify.app/',
         },
         {
             'id' : '2',
@@ -23,6 +24,16 @@ export default function Projects(){
             'previewBtn' : 'Preview',
             'gitHubUrl' : 'https://github.com/aharankit/Zepto_app',
             'previewUrl' : 'https://zepto-app.netlify.app/',
+        },
+        {
+            'id' : '3',
+            'projectsName' : 'Grid Table',
+            'url' : gridlistImage,
+            'descriptions' : 'A table with CRUD functionality, sorting, and pagination.',
+            'githubBtn' : 'Github',
+            'previewBtn' : 'Preview',
+            'gitHubUrl' : 'https://github.com/aharankit/Grid-Table',
+            'previewUrl' : 'https://jsdata-table.netlify.app/',
         },
         
     ]
