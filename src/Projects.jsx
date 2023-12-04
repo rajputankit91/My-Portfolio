@@ -50,8 +50,8 @@ export default function Projects(){
                                 <h3>{item.projectsName}</h3>
                                 <p>{item.descriptions}</p>
                                 <div className="project-btn-box">
-                                    <a href={item.gitHubUrl}><button>{item.githubBtn}</button></a>
-                                    <a href={item.previewUrl}><button>{item.previewBtn}</button></a>
+                                    <a href={item.gitHubUrl} target="_blank"><button>{item.githubBtn}</button></a>
+                                    <a href={item.previewUrl} target="_blank"><button>{item.previewBtn}</button></a>
                                 </div>
                             </div>
                         </div>)   
