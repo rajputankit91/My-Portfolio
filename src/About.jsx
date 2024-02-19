@@ -7,10 +7,10 @@ export default function About() {
       <div className="section-container">
         <h2 className="title">About me</h2>
         <div className="about-content">
-          <div className="left">
+          <div className="left column">
             <img src={myPhoto} width={325} height={325} alt="my-photo" />
           </div>
-          <div className="right">
+          <div className="right column">
             <h2>I'm ankit kumar</h2>
             <p>
               I'm a front End Developer proficient in a wide array of web

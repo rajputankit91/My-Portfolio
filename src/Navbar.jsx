@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { IoMdMenu } from "react-icons/io";
 
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
@@ -36,6 +37,8 @@ export default function Navbar() {
             <a href="#contact">Contact</a>
           </li>
         </ul>
+
+        <div className="hamberMenu"><IoMdMenu /></div>
       </div>
     </nav>
   );
