@@ -438,8 +438,12 @@ footer span a {
   }
 
   .my-name{
-    z-index: 999;
+    word-wrap: break-word;
     color: crimson;
+  }
+
+  .text{
+    word-wrap: break-word;
   }
   
   #contact .section-container .contact-content .column{
