@@ -423,6 +423,10 @@ footer span a {
     transition: all 0.3s ease;
   }
 
+  .section-container .active{
+    left: 0;
+  }
+
   .hamberMenu{
     display: block;
     color: #fff;
@@ -447,5 +451,15 @@ footer span a {
   
   #contact .section-container .contact-content .column{
     width: 100%;
+  }
+
+  .navbar .section-container .active li{
+    display: block;
+  }
+
+  .navbar .section-container .active li a{
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
   }
 }

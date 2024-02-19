@@ -4,6 +4,7 @@ import { IoMdMenu } from "react-icons/io";
 
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
+  const [showNavbar,setShowNavbar] = useState(false);
 
   const changeBackground = () => {
     window.scrollY ? setNavbar(true) : setNavbar(false);
@@ -11,6 +12,14 @@ export default function Navbar() {
 
   window.addEventListener("scroll", changeBackground);
 
+  const ToggleNavbar = () =>{
+    setShowNavbar(!showNavbar);
+    console.log(showNavbar);
+  }
+
+  const handleHideNavbar = () =>{
+    setShowNavbar(!showNavbar)
+  }
   return (
     <nav className={`${navbar ? "navbar active" : "navbar"}`}>
       <div className="section-container">
@@ -20,25 +29,25 @@ export default function Navbar() {
           </a>
         </div>
 
-        <ul className="navList">
-          <li>
+        <ul className= {`${showNavbar ? "navList active" : "navList" }`}>
+          <li onClick={handleHideNavbar}>
             <a href="#mainSection">Home</a>
           </li>
-          <li>
+          <li onClick={handleHideNavbar}>
             <a href="#about">About</a>
           </li>
-          <li>
+          <li onClick={handleHideNavbar}>
             <a href="#skills">Skills</a>
           </li>
-          <li>
+          <li onClick={handleHideNavbar}>
             <a href="#projects">Projects</a>
           </li>
-          <li>
+          <li onClick={handleHideNavbar}>
             <a href="#contact">Contact</a>
           </li>
         </ul>
 
-        <div className="hamberMenu"><IoMdMenu /></div>
+        <div className= "hamberMenu" onClick={ToggleNavbar}><IoMdMenu /></div>
       </div>
     </nav>
   );
