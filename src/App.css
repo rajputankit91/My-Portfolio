@@ -401,6 +401,9 @@ footer span a {
 }
 
 @media screen and (max-width: 947px) {
+  .section{
+    width: 500px;
+  }
   .section-container .navList{
     position: fixed;
     height: 100vh;
@@ -421,7 +424,6 @@ footer span a {
   
   .section-container{
     padding: 0px 23px;
-    max-width: 1000px;
   }
 
   #about .about-content .column{
