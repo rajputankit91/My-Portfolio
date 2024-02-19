@@ -401,6 +401,9 @@ footer span a {
 }
 
 @media screen and (max-width: 947px) {
+  #root{
+    overflow-x: hidden;
+  }
   .section{
     width: 500px;
   }
