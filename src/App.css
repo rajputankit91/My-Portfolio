@@ -1,20 +1,20 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-nav{
+nav {
   display: block;
 }
 
-.navbar{
-  position:fixed ;
+.navbar {
+  position: fixed;
   width: 100%;
   padding: 10px 0;
   z-index: 999;
@@ -22,49 +22,48 @@ nav{
   font-family: "Ubuntu", sans-serif;
 }
 
-.active{
-  background-color:crimson;
+.active {
+  background-color: crimson;
 }
 
-.active .section-container span{
+.active .section-container span {
   color: white;
 }
 
-.active .section-container ul li a:hover{
+.active .section-container ul li a:hover {
   color: #fff;
   background-color: white;
   border-radius: 03px;
 }
 
-.navbar .section-container{
+.navbar .section-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
-.section-container{
+.section-container {
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
 }
 
-.logo-div a{
+.logo-div a {
   font-size: 30px;
   font-weight: 500;
   color: #fff;
   font-family: "Pacifico";
   transition: all 0.3s ease;
 }
-.logo-div a:hover{
-  cursor:pointer;
+.logo-div a:hover {
+  cursor: pointer;
 }
 
-.logo-div a span{
+.logo-div a span {
   color: crimson;
 }
 
-.navList{
+.navList {
   display: block;
   list-style-type: disc;
   margin-block-start: 1em;
@@ -74,12 +73,12 @@ nav{
   padding-inline-start: 40px;
 }
 
-.navList li{
+.navList li {
   display: list-item;
   text-align: -webkit-match-parent;
 }
 
-.navList li a{
+.navList li a {
   display: block;
   font-size: 18px;
   font-weight: 500;
@@ -88,13 +87,14 @@ nav{
   transition: color 0.3s ease;
 }
 
-section{
+section {
   padding: 100px 0;
 }
 
-.main-section{
+.main-section {
   display: flex;
-  background: url(https://images.hindustantimes.com/tech/img/2023/07/31/960x540/michail-sapiton-alCEnNmzhPE-unsplash_1690784496036_1690784504475.jpg) no-repeat center;
+  background: url(https://images.hindustantimes.com/tech/img/2023/07/31/960x540/michail-sapiton-alCEnNmzhPE-unsplash_1690784496036_1690784504475.jpg)
+    no-repeat center;
   height: 100vh;
   background-size: cover;
   background-attachment: fixed;
@@ -103,11 +103,11 @@ section{
   font-family: "Ubuntu", sans-serif;
 }
 
-.main-section .section-container{
+.main-section .section-container {
   margin: auto 0 auto 40px;
 }
 
-ul{
+ul {
   display: block;
   list-style-type: disc;
   margin-block-start: 1em;
@@ -117,12 +117,12 @@ ul{
   padding-inline-start: 40px;
 }
 
-.navbar .section-container .navList li{
+.navbar .section-container .navList li {
   list-style: none;
   display: inline-block;
 }
 
-.navbar .section-container .navList li a{
+.navbar .section-container .navList li a {
   display: block;
   font-size: 18px;
   font-weight: 500;
@@ -131,30 +131,30 @@ ul{
   transition: color 0.3s ease;
 }
 
-.navbar .section-container .navList li a:hover{
+.navbar .section-container .navList li a:hover {
   color: crimson;
 }
 
-.hello{
+.hello {
   font-size: 27px;
 }
 
-.my-name{
+.my-name {
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
 }
 
-.text{
-font-size: 40px;
-margin: 5px 0;
+.text {
+  font-size: 40px;
+  margin: 5px 0;
 }
 
-.resume{
+.resume {
   margin-right: 25px;
 }
 
-#mainSection .main-section-container a{
+#mainSection .main-section-container a {
   display: inline-block;
   background: crimson;
   color: #fff;
@@ -166,11 +166,15 @@ margin: 5px 0;
   transition: all 0.3s ease;
 }
 
-#about,#skills,#projects,#contact,#footer{
+#about,
+#skills,
+#projects,
+#contact,
+#footer {
   font-family: "Poppins", sans-serif;
 }
 
-section .title{
+section .title {
   position: relative;
   text-align: center;
   font-size: 40px;
@@ -180,18 +184,21 @@ section .title{
   font-family: "Ubuntu", sans-serif;
 }
 
-#about .about-content,#skills .skill-content, #contact .contact-content{
+#about .about-content,
+#skills .skill-content,
+#contact .contact-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
-#about .about-content .left{
+#about .about-content .left {
   width: 45%;
 }
 
-#about .about-content .right,#skills .skill-content .left{
+#about .about-content .right,
+#skills .skill-content .left {
   width: 55%;
   text-align: justify;
   line-height: 1.6;
@@ -199,63 +206,66 @@ section .title{
   font-family: "Ubuntu", sans-serif;
 }
 
-.mySkills,.Contact{
+.mySkills,
+.Contact {
   background-color: #111;
   color: #fff;
 }
 
-#skills .skill-content .column, #contact .contact-content .column{
+#skills .skill-content .column,
+#contact .contact-content .column {
   width: calc(50% - 30px);
 }
 
-#contact .contact-content .column .text{
+#contact .contact-content .column .text {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-#contact .contact-content .column p{
+#contact .contact-content .column p {
   justify-content: center;
 }
-#contact .contact-content .column .icons{
+#contact .contact-content .column .icons {
   margin: 10px 0;
 }
 
-.row{
-  height: 65px;align-items: center;
+.row {
+  height: 65px;
+  align-items: center;
 }
 
 .row p {
   font-size: 18px;
 }
 
-#contact .right .text{
+#contact .right .text {
   padding-bottom: 10px;
   font-weight: 600;
 }
 
-form{
+form {
   display: block;
 }
 
-.fields{
+.fields {
   height: 45px;
   width: 100%;
   margin-bottom: 15px;
   display: flex;
 }
 
-form .name{
+form .name {
   margin-right: 10px;
   width: 48%;
 }
 
-form .email{
+form .email {
   margin-left: 10px;
   width: 48%;
 }
 
-form input{
+form input {
   height: 100%;
   width: 100%;
   border: 1px solid lightgrey;
@@ -266,28 +276,28 @@ form input{
   font-family: "Poppins", sans-serif;
 }
 
-.info{
+.info {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   /* justify-content: space-between; */
 }
 
-.info a{
+.info a {
   padding: 0 10px;
 }
 
-.info a img{
+.info a img {
   padding: 0 10px;
 }
 
-.info a h2{
+.info a h2 {
   text-align: center;
 }
 
 /*  */
 
-.projects-contents{
+.projects-contents {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -295,7 +305,7 @@ form input{
   margin-right: 20px;
 }
 
-.card{
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -307,41 +317,40 @@ form input{
   color: #fff;
   border-radius: 10px;
 }
-.card img{
+.card img {
   border-radius: 10px;
   border: 2px solid crimson;
   width: 300px;
 }
 
-.card h3{
+.card h3 {
   letter-spacing: 0.2rem;
   margin: 2px 0;
   padding: 2px 0;
 }
 
-.card p{
+.card p {
   margin: 5px 0px;
 }
 
-.card button{
+.card button {
   border-radius: 10px;
   margin-left: 10px;
   width: 85px;
   height: 35px;
 }
 
-.card button:hover{
+.card button:hover {
   background-color: crimson;
   color: #fff;
 }
 
-.card .card-content:hover{
+.card .card-content:hover {
   transform: scale(1.05);
   transition: all 0.5s ease;
-  
 }
 
-textarea{
+textarea {
   width: 100%;
   border-radius: 10px;
   border: 1px solid lightgrey;
@@ -351,12 +360,12 @@ textarea{
   font-size: 15px;
   font-family: "Poppins", sans-serif;
 }
-#contact .right form .textarea{
+#contact .right form .textarea {
   height: 160px;
   width: 100%;
 }
 
-#contact .right .button button{
+#contact .right .button button {
   height: 47px;
   width: 220px;
   border: 2px solid crimson;
@@ -369,17 +378,17 @@ textarea{
   cursor: pointer;
 }
 
-#contact .right .button button:hover{
+#contact .right .button button:hover {
   background-color: #111;
 }
 
-footer{
+footer {
   background: #fff;
   padding: 20px 23px;
   color: #000;
   text-align: center;
 }
 
-footer span a{
+footer span a {
   color: crimson;
 }

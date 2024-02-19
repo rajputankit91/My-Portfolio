@@ -1,10 +1,9 @@
-import MainSection from './MainSection'
+import MainSection from "./MainSection";
 
-
-export default function Home(){
-    return (
-        <>
-            <MainSection/>
-        </>
-    )
+export default function Home() {
+  return (
+    <>
+      <MainSection />
+    </>
+  );
 }
