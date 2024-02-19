@@ -440,10 +440,12 @@ footer span a {
   .my-name{
     word-wrap: break-word;
     color: crimson;
+    max-width: 300px;
   }
 
   .text{
     word-wrap: break-word;
+    max-width: 300px;
   }
   
   #contact .section-container .contact-content .column{
