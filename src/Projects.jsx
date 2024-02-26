@@ -1,6 +1,7 @@
 import zeptoImage from "../images/zeptoImage.png";
 import gridlistImage from "../images/gridlistImage.png";
 import quizImage from "../images/quizImage.png";
+import userManagement from "../images/userManagement.png"
 
 export default function Projects() {
   const projectsData = [
@@ -35,6 +36,16 @@ export default function Projects() {
       previewBtn: "Preview",
       gitHubUrl: "https://github.com/aharankit/Grid-Table",
       previewUrl: "https://jsdata-table.netlify.app/",
+    },
+    {
+      id: "4",
+      projectsName: "Users Management",
+      url: userManagement,
+      descriptions: "A website with rendering with add ,edit and delete functionality.",
+      githubBtn: "Github",
+      previewBtn: "Preview",
+      gitHubUrl: "https://github.com/aharankit/users",
+      previewUrl: "https://usermanagement012024.netlify.app/",
     },
   ];
   return (
