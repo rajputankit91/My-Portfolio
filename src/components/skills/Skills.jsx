@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./skills.css";
 import 'animate.css';
-
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 const Skills = () =>{
+
+  useEffect(() =>{
+    Aos.init({duration:200})
+  },[]);
+
   const skillData = [
     {
       name: "HTML",
@@ -60,7 +66,7 @@ const Skills = () =>{
             <div className="column-right">
               <div className="info">
                 {skillData.map((item, index) => (
-                  <a key={index} className="skill animate__animated" width={100}>
+                  <a key={index} className="skill animate__animated" width={100} data-aos = "zoom-in">
                     {
                       <img
                         key={index}

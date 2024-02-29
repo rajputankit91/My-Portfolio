@@ -1,0 +1,107 @@
+.Contact {
+  margin-top: 50px;
+}
+.Contact .section-container h1 {
+  text-align: center;
+  font-size: 45px;
+}
+.Contact .contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Contact .column-left {
+  /* border: solid; */
+  width: 50%;
+  padding: 10px;
+}
+.Contact .column-left .text{
+  font-size: 25px;
+  font-weight: bold;
+}
+.Contact .column-left p{
+  font-size: 18px;
+  font-weight: 400;
+}
+.icons .row {
+  margin-top: 10px;
+}
+.icons .row .spanbox1 {
+  font-weight: bold   ;
+}
+.icons .row .spanbox2 {
+  margin-left: 10px;
+}
+.Contact .column-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Contact .column-right .text {
+  font-size: 30px;
+  text-align: start;
+}
+.Contact form input{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 1px solid #aaaaaa;
+  font-size: 20px;
+  outline: none;
+}
+.Contact form textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #aaaaaa;
+  font-size: 20px;
+  margin-top: 20px;
+  outline: none;
+}
+.Contact .btn {
+  text-align: center;
+  margin-top: 20px;
+}
+.Contact .btn button {
+  text-align: center;
+  background: linear-gradient(180deg, #85a5af,#7ab9fc 99.36%);
+  padding: 10px 30px;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 80%;
+}
+
+@media screen and (max-width: 981px){
+  .Contact form input{
+      width: 80%;
+  }
+  .Contact form textarea {
+      width: 80%;
+  }
+}
+
+@media screen and (max-width: 781px){
+  .Contact .contact-content {
+      flex-direction: column;
+  }
+  .Contact .column-left {
+      width: 100%;
+      padding-left: 40px;
+  }
+  .Contact .column-right {
+      width: 100%;
+      padding-left: 10px;
+  }
+  .Contact form input{
+      width: 90%;
+  }
+  .Contact form textarea {
+      width: 90%;
+  }
+}

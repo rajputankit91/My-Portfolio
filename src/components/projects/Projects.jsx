@@ -1,11 +1,19 @@
-import React from "react"
+import React, { useEffect } from "react"
 import zeptoImage from "../../images/zeptoImage.png";
 import gridlistImage from "../../images/gridlistImage.png";
 import quizImage from "../../images/quizImage.png";
 import userManagement from "../../images/userManagement.png"
 import "./projects.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Projects = () =>{
+
+  useEffect(() =>{
+    Aos.init({duration:2000});
+  },[])
+
+
   const projectsData = [
     {
       id: "1",
@@ -52,19 +60,16 @@ const Projects = () =>{
   ];
   return (
     <section className="projects" id="projects">
-      {/* <ScrollAnimation animateIn='bounceInRight'>
-        <h1>
-          Some Text
-        </h1>
-      </ScrollAnimation> */}
+      
+      
 
       
       <div className="section-container">
         <h1 className="title">My Projects....</h1>
 
-        <div className="projects-contents">
+        <div className="projects-contents" >
           {projectsData.map((item, index) => (
-            <div key={index} className="card">
+            <div key={index} className="card" data-aos = "fade-down">
               <div className="card-content">
                 <img src={item.url} height={180} width={200} />
                 <h3>{item.projectsName}</h3>

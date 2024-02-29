@@ -1,0 +1,27 @@
+.footer {
+  margin-top: 50px;
+  height: 100px;
+  width: 100%;
+  color: #fff;
+  background-color: #000;
+  padding: 20px;
+}
+.footer-box {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin: 20px;
+}
+.footerEnd {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 781px){
+  .footer {
+      margin-top: 30px;
+    }
+  .footer-box {
+      flex-direction: column;
+    }
+}

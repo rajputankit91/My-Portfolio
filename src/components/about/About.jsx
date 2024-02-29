@@ -3,6 +3,8 @@ import "./about.css";
 import Github from "../../images/Github.webp";
 import linkedin from "../../images/linkedin.webp";
 import vector1 from "../../images/mainimg.jpg";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa6";
 
 const About = () =>{
 
@@ -16,17 +18,18 @@ const About = () =>{
           <span>and I'm a Frontend Developer</span>
         </div>
 
-        {/* <button className="button i-button">Download Resume</button> */}
         <a className="resume" href="resume.pdf" download="resume.pdf">
             Download Resume
         </a>
         <div className="i-icons">
           <a className="resume" href="https://github.com/rajputankit91" target="_blank">
-            <img src={Github} alt=""/>
+            {/* <img src={Github} alt=""/> */}
+            <FaGithub />
           </a>
 
           <a className="resume" href="https://www.linkedin.com/in/ankit-kumar-5180b7283/" target="_blank">
-            <img src={linkedin} alt=""/>
+            {/* <img src={linkedin} alt=""/> */}
+            <FaLinkedinIn />
           </a>
         </div>
       </div>

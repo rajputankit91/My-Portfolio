@@ -1,15 +1,16 @@
 .intro{
   display: flex;
-  height: 57vh;
-  margin-top: 6rem;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  margin-top: 50px;
 }
-
 .i-left{
+  width: 50%;
   display: flex;
-  position: relative;
-  flex: 1;
+  justify-content: center;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .i-name{
@@ -55,20 +56,50 @@
   cursor: pointer;
 }
 
-.i-icons .resume > img{
+/* .i-icons .resume > img{
   width: 100px;
-}
+} */
 
 .i-right{
-  flex: 1;
-  position: relative;
+  width: 50%;
 }
 
-.i-right > img{
-  background:white;
+.i-icons > .resume{
+  font-size: 60px;
 }
 
-.i-right>*{
-  position: absolute;
-  z-index: 1;
+.resume {
+  background: linear-gradient(180deg, #85a5af,#7ab9fc 99.36%);
+  text-decoration: none;
+  color: #fff;
+  margin-top: 10px;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 991px){
+  .i-left{
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 761px){
+  .intro{
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .i-left{
+    width: 100%;
+    padding-left: 10px;
+  }
+  .i-right{
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 441px){
+  .i-right img {
+    width: 100%;
+  }
 }

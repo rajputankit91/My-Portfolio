@@ -1,14 +1,15 @@
 import React from "react";
+import "./contact.css";
 
 const Contact = () =>{
   return (
     <>
       <section className="Contact" id="contact">
         <div className="section-container">
-          <h2 className="title">Contact me</h2>
+          <h1 className="title">Contact me....</h1>
 
           <div className="contact-content">
-            <div className="column left">
+            <div className="column-left">
               <div className="text">Reach Out to me!</div>
               <p>
                 Discuss a Project or just want to say Hi? My inbox is open for
@@ -16,21 +17,21 @@ const Contact = () =>{
               </p>
               <div className="icons">
                 <div className="row">
-                  <p>Name</p>
-                  <p>Ankit Kumar</p>
+                  <span className="spanbox1">Name :</span>
+                  <span className="spanbox2">Ankit Kumar</span>
                 </div>
                 <div className="row">
-                  <p>Address</p>
-                  <p>Bijnor, India</p>
+                  <span className="spanbox1">Address :</span>
+                  <span className="spanbox2">Bijnor, India</span>
                 </div>
                 <div className="row">
-                  <p>E-mail</p>
-                  <p>ankitrajput10791@gmail.com</p>
+                  <span className="spanbox1">E-mail :</span>
+                  <span className="spanbox2">ankitrajput10791@gmail.com</span>
                 </div>
               </div>
             </div>
-            <div className="column right">
-              <div className="text">Message me</div>
+            <div className="column-right">
+              <div className="text">Message me...</div>
               <form
                 action="https://formspree.io/f/xwkdwgrq"
                 method="POST"
@@ -38,12 +39,12 @@ const Contact = () =>{
               >
                 <div className="fields">
                   <div className="field name">
-                    <input type="text" placeholder="Name" name="name"></input>
+                    <input type="text" placeholder="Name..." name="name"></input>
                   </div>
                   <div className="field email">
                     <input
                       type="email"
-                      placeholder="Email"
+                      placeholder="Email..."
                       name="email"
                     ></input>
                   </div>
@@ -51,7 +52,7 @@ const Contact = () =>{
                 <div className="fields">
                   <input
                     type="text"
-                    placeholder="Subject"
+                    placeholder="Subject..."
                     name="message"
                   ></input>
                 </div>
@@ -59,10 +60,10 @@ const Contact = () =>{
                   <textarea
                     cols="30"
                     rows="10"
-                    placeholder="Describe projects"
+                    placeholder="Describe projects..."
                   ></textarea>
                 </div>
-                <div className="button">
+                <div className="btn">
                   <button type="submit">Send Message</button>
                 </div>
               </form>

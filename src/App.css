@@ -47,9 +47,14 @@
 } */
 
 .App{
-  padding: 0.5rem 3.5rem;
+  /* padding: 0.5rem 3.5rem; */
   /* overflow: hidden; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   color: black;
+  /* border: solid; */
 }
 
 .button{
