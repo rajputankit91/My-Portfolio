@@ -4,7 +4,6 @@ import gridlistImage from "../../images/gridlistImage.png";
 import quizImage from "../../images/quizImage.png";
 import userManagement from "../../images/userManagement.png"
 import "./projects.css";
-import ScrollAnimation from "react-animate-on-scroll";
 
 const Projects = () =>{
   const projectsData = [
@@ -53,11 +52,13 @@ const Projects = () =>{
   ];
   return (
     <section className="projects" id="projects">
-      <ScrollAnimation animateIn='bounceInRight'>
+      {/* <ScrollAnimation animateIn='bounceInRight'>
         <h1>
-          {/* Some Text */}
+          Some Text
         </h1>
-      </ScrollAnimation>
+      </ScrollAnimation> */}
+
+      
       <div className="section-container">
         <h1 className="title">My Projects....</h1>
 
