@@ -1,4 +1,6 @@
-export default function ContactMe() {
+import React from "react";
+
+const Contact = () =>{
   return (
     <>
       <section className="Contact" id="contact">
@@ -71,3 +73,5 @@ export default function ContactMe() {
     </>
   );
 }
+
+export default Contact;

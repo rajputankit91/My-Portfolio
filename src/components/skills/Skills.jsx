@@ -1,4 +1,9 @@
-export default function Skills() {
+import React from "react";
+import "./skills.css";
+import 'animate.css';
+
+
+const Skills = () =>{
   const skillData = [
     {
       name: "HTML",
@@ -34,9 +39,9 @@ export default function Skills() {
     <>
       <section className="mySkills" id="skills">
         <div className="section-container">
-          <h2 className="title">My Skills</h2>
+          <h1 className="title">My Skills....</h1>
           <div className="skill-content">
-            <div className="column left">
+            <div className="column-left">
               <div className="text">My creative skills</div>
               <p>
                 I'm a React Js Developer with a passion for learning and can
@@ -52,10 +57,10 @@ export default function Skills() {
               </p>
             </div>
 
-            <div className="column right">
+            <div className="column-right">
               <div className="info">
                 {skillData.map((item, index) => (
-                  <a key={index} className="skill" width={100}>
+                  <a key={index} className="skill animate__animated" width={100}>
                     {
                       <img
                         key={index}
@@ -75,3 +80,5 @@ export default function Skills() {
     </>
   );
 }
+
+export default Skills;

@@ -1,9 +1,12 @@
-import zeptoImage from "../images/zeptoImage.png";
-import gridlistImage from "../images/gridlistImage.png";
-import quizImage from "../images/quizImage.png";
-import userManagement from "../images/userManagement.png"
+import React from "react"
+import zeptoImage from "../../images/zeptoImage.png";
+import gridlistImage from "../../images/gridlistImage.png";
+import quizImage from "../../images/quizImage.png";
+import userManagement from "../../images/userManagement.png"
+import "./projects.css";
+import ScrollAnimation from "react-animate-on-scroll";
 
-export default function Projects() {
+const Projects = () =>{
   const projectsData = [
     {
       id: "1",
@@ -50,8 +53,13 @@ export default function Projects() {
   ];
   return (
     <section className="projects" id="projects">
+      <ScrollAnimation animateIn='bounceInRight'>
+        <h1>
+          {/* Some Text */}
+        </h1>
+      </ScrollAnimation>
       <div className="section-container">
-        <h2 className="title">My Projects</h2>
+        <h1 className="title">My Projects....</h1>
 
         <div className="projects-contents">
           {projectsData.map((item, index) => (
@@ -62,10 +70,10 @@ export default function Projects() {
                 <p>{item.descriptions}</p>
                 <div className="project-btn-box">
                   <a href={item.gitHubUrl} target="_blank">
-                    <button>{item.githubBtn}</button>
+                    {item.githubBtn}
                   </a>
                   <a href={item.previewUrl} target="_blank">
-                    <button>{item.previewBtn}</button>
+                    {item.previewBtn}
                   </a>
                 </div>
               </div>
@@ -76,3 +84,5 @@ export default function Projects() {
     </section>
   );
 }
+
+export default Projects;

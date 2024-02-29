@@ -1,0 +1,56 @@
+.mySkills {
+  /* border: solid; */
+  margin-top: 150px;
+}
+.section-container h1 {
+  text-align: center;
+  font-size: 60px;
+}
+.skill-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: solid; */
+}
+.column-left {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  padding: 0px 50px;
+}
+.column-left .text{
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.column-left p {
+  font-size: 20px;
+  line-height: 30px;
+}
+.column-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.column-right .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.column-right .info a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 50px;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+.column-right .info a img {
+  padding: 10px 40px;
+}

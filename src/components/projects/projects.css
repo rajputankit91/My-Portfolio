@@ -1,0 +1,32 @@
+.projects {
+  margin-top: 50px;
+}
+.projects-contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+.projects-contents .card {
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  /* border: solid; */
+  height: 500px;
+}
+.card-content img {
+  border: 1px solid #aaaaaa;
+  width: 100%;
+  height: 300px;
+}
+.project-btn-box a{
+  text-decoration: none;
+  color: #000;
+  margin-right: 20px;
+  background: linear-gradient(180deg, #85a5af,#7ab9fc 99.36%);
+  padding: 8px 25px;
+  border-radius: 10px;
+  color: #fff;
+}
