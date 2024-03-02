@@ -1,44 +1,65 @@
-import React, { useState } from "react";
-import "./navbar.css";
+import React, { useEffect, useState } from "react";
 import { IoMdMenu } from "react-icons/io";
+import "./navbar.css";
+import { FaReact } from "react-icons/fa";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Navbar = () =>{
-  const [navbar, setNavbar] = useState(false);
   const [showNavbar,setShowNavbar] = useState(false);
+
+
+  useEffect(() =>{
+    Aos.init({duration:2000});
+  },[])
 
   const ToggleNavbar = () =>{
     setShowNavbar(!showNavbar);
     console.log(showNavbar);
   }
 
+  const handleHideNavbar = () =>{
+    setShowNavbar(!showNavbar)
+  }
+
   return (
-    <div className={`${navbar ? "n-wrapper active" : "n-wrapper"}`}>
-      <div className="n-left">
-        <div className="n-name">Ankit Kumar</div>
-        {/* <span> toggle</span> */}
-      </div>
-      <div className="n-right">
-        <div className="n-list">
-          <ul className= {`${showNavbar ? "navList active" : "navList" }`}>
-            <li>
+    <nav className="navbar" data-aos="fade-down"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
+      <div className="section-container">
+        
+        <div className="n-left">
+        <FaReact />
+          {/* <div className="n-name">Ankit Kumar</div> */}
+        </div>
+
+        <ul className= {`${showNavbar ? "navList active" : "navList" }`}>
+            <li onClick={handleHideNavbar}>
               <a href="#intro">Home</a>
             </li>
-            <li>
+            <li onClick={handleHideNavbar}>
               <a href="#projects">Projects</a>
             </li>
-            <li>
+            <li onClick={handleHideNavbar}>
               <a href="#skills">Skills</a>
             </li>
-            <li>Experiences</li>
-          </ul>
-        </div>
-        <button className="button n-button">
-          <a href="#contact">Contact Us</a>
-        </button>
+            <li onClick={handleHideNavbar}>
+              <a href="">Experiences</a>
+            </li>
+            <li onClick={handleHideNavbar}>
+              <a href="#contact">Contact Us</a>
+            </li>
+        </ul>
+
+        <div className= "hamberMenu" onClick={ToggleNavbar}><IoMdMenu /></div>
       </div>
-      <div className= "hamberMenu" onClick={ToggleNavbar}><IoMdMenu /></div>
-    </div>
+      
+    </nav>
   )
 }
 
 export default Navbar;
+{/* <div className="n-right"> */}
+  {/* <div className="n-list"> */}
+  {/* </div> */}
+{/* </div> */}

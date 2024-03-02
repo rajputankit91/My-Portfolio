@@ -61,17 +61,14 @@ const Projects = () =>{
   return (
     <section className="projects" id="projects">
       
-      
-
-      
       <div className="section-container">
-        <h1 className="title">My Projects....</h1>
+        <h2 className="title">My Projects</h2>
 
         <div className="projects-contents" >
           {projectsData.map((item, index) => (
             <div key={index} className="card" data-aos = "fade-down">
               <div className="card-content">
-                <img src={item.url} height={180} width={200} />
+                <img data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000" src={item.url} height={180} width={200} />
                 <h3>{item.projectsName}</h3>
                 <p>{item.descriptions}</p>
                 <div className="project-btn-box">

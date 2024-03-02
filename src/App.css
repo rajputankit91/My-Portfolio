@@ -40,11 +40,12 @@
 .read-the-docs {
   color: #888;
 } */
-/* *{
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} */
+  text-decoration: none;
+}
 
 .App{
   /* padding: 0.5rem 3.5rem; */
@@ -78,4 +79,13 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+a{
+  list-style: none;
+}
+
+section {
+  padding: 120px 0;
+  /* min-height: 1000px; */
 }

@@ -1,11 +1,14 @@
 .projects {
   margin-top: 50px;
-  padding: 10px;
+  box-shadow: rgba(33, 35, 38, 0.2) 0px 10px 10px -10px;
 }
-.projects .section-container h1 {
+
+.projects .section-container h2 {
   text-align: center;
   font-size: 45px;
+  padding-bottom: 2rem;
 }
+
 .projects .projects-contents {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -18,7 +21,16 @@
   align-items: center;
   flex-direction: column;
   border-radius: 10px;
+  min-height: 400px;
 }
+
+.projects .projects-contents .card .card-content{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
 .projects .card-content img {
   border: 1px solid #aaaaaa;
   width: 100%;

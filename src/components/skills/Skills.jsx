@@ -45,7 +45,7 @@ const Skills = () =>{
     <>
       <section className="mySkills" id="skills">
         <div className="section-container">
-          <h1 className="title">My Skills....</h1>
+          <h2 className="title">My Skills</h2>
           <div className="skill-content">
             <div className="column-left">
               <div className="text">My creative skills</div>
@@ -75,7 +75,7 @@ const Skills = () =>{
                         width={100}
                       />
                     }
-                    {<h2>{item.name}</h2>}
+                    {<p>{item.name}</p>}
                   </a>
                 ))}
               </div>

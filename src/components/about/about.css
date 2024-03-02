@@ -2,8 +2,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 85%;
-  margin-top: 50px;
+  width: 100%;
+  /* margin-top: 50px; */
+  box-shadow: rgba(33, 35, 38, 0.2) 0px 10px 10px -10px;
+  min-height: 1000px;
+  padding: 0px;
+}
+
+.intro .i-left,.intro .i-right{
+  padding: 0px 0px 0px 50px;
 }
 .i-left{
   width: 50%;
@@ -31,9 +38,9 @@
 }
 
 .i-name>:nth-child(3){
-  font-weight: 100;
-  font-size: 14px;
-  color: gray;
+  font-weight: 200;
+  font-size: 22px;
+  /* color: gray; */
   margin-top: 10px;
 }
 
@@ -43,9 +50,10 @@
 }
 
 .i-icons{
-  margin-top: 3rem;
+  /* margin-top: -1rem; */
   display: flex;
   gap: 0rem;
+  margin-bottom: 1rem;
 }
 
 .i-icons>*{
