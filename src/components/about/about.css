@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  /* margin-top: 50px; */
   box-shadow: rgba(33, 35, 38, 0.2) 0px 10px 10px -10px;
   min-height: 1000px;
   padding: 0px;
@@ -12,6 +11,7 @@
 .intro .i-left,.intro .i-right{
   padding: 0px 0px 0px 50px;
 }
+
 .i-left{
   width: 50%;
   display: flex;
@@ -27,21 +27,31 @@
 
 .i-name>:nth-child(1){
   color: black;
-  font-weight: bold;
-  font-size: 3rem;
+  font-weight: 700;
+  font-size: 70px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  letter-spacing: -3.2px;
 }
 
 .i-name>:nth-child(2){
   color: rgb(142, 208, 241);
-  font-weight: bold;
-  font-size: 3rem;
+  font-weight: 700;
+  font-size: 70px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  letter-spacing: -3.2px;
 }
 
 .i-name>:nth-child(3){
-  font-weight: 200;
-  font-size: 22px;
-  /* color: gray; */
+  font-weight: 100;
+  font-size: 50px;
+  font-style: normal;
+  color: rgb(79, 79, 79);;
+  font-family: "Inter", sans-serif;
   margin-top: 10px;
+  letter-spacing: -1.8px;
+  text-align: start;
 }
 
 .i-button{
@@ -50,7 +60,6 @@
 }
 
 .i-icons{
-  /* margin-top: -1rem; */
   display: flex;
   gap: 0rem;
   margin-bottom: 1rem;
@@ -63,10 +72,6 @@
 .i-icons>*:hover{
   cursor: pointer;
 }
-
-/* .i-icons .resume > img{
-  width: 100px;
-} */
 
 .i-right{
   width: 50%;
@@ -84,6 +89,11 @@
   width: fit-content;
   padding: 10px 20px;
   border-radius: 10px;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
 }
 
 @media screen and (max-width: 991px){

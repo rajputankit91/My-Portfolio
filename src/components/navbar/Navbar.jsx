@@ -23,7 +23,8 @@ const Navbar = () =>{
   }
 
   return (
-    <nav className="navbar" data-aos="fade-down"
+    <nav className="navbar" 
+    data-aos="fade-down"
     data-aos-easing="ease-out-cubic"
     data-aos-duration="2000">
       <div className="section-container">
@@ -59,7 +60,3 @@ const Navbar = () =>{
 }
 
 export default Navbar;
-{/* <div className="n-right"> */}
-  {/* <div className="n-list"> */}
-  {/* </div> */}
-{/* </div> */}

@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./contact.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () =>{
+
+  // useEffect(() =>{
+  //   Aos.init({duration:2000});
+  // },[])
+
   return (
     <>
-      <section className="Contact" id="contact">
+      <section className="Contact" id="contact" data-aos="zoom-in"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
         <div className="section-container">
-          <h1 className="title">Contact me....</h1>
+          <h1 className="title">Contact me</h1>
 
           <div className="contact-content">
             <div className="column-left">
@@ -28,10 +37,13 @@ const Contact = () =>{
                   <span className="spanbox1">E-mail :</span>
                   <span className="spanbox2">ankitrajput10791@gmail.com</span>
                 </div>
+                <div className="row">
+                  <span className="spanbox1">Contact no :</span>
+                  <span className="spanbox2">+91 8851094318</span>
+                </div>
               </div>
             </div>
             <div className="column-right">
-              <div className="text">Message me...</div>
               <form
                 action="https://formspree.io/f/xwkdwgrq"
                 method="POST"
@@ -60,7 +72,7 @@ const Contact = () =>{
                   <textarea
                     cols="30"
                     rows="10"
-                    placeholder="Describe projects..."
+                    placeholder="message"
                   ></textarea>
                 </div>
                 <div className="btn">

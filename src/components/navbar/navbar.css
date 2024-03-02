@@ -31,7 +31,6 @@ nav {
 .n-left .n-name{
   font-size: 30px;
   font-weight: 500;
-  /* color: #fff; */
   font-family: "Pacifico";
   transition: all 0.3s ease;
 }
@@ -85,11 +84,13 @@ ul {
 
 .navbar .section-container .navList li a {
   display: block;
-  font-size: 21px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 400;
   margin-left: 25px;
   color: black;
   transition: color 0.3s ease;
+  font-family: sans-serif;
+  letter-spacing: 1px;
 }
 
 .navbar .section-container .navList li a:hover {
@@ -140,132 +141,3 @@ ul {
   }
 
 }
-/* .n-wrapper{
-  position: sticky;
-  width: 90%;
-  padding: 10px;
-  z-index: 999;
-  transition: all 0.3s ease;
-  height: 7vh;
-  border-radius: 17px;
-  background-color: rgba(255, 255, 255, .8);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 14px rgba(0,0,0,.05);
-  top: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
-
-/* .n-wrapper .section-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-} */
-
-/* .navList li a{
-  list-style: none;
-  text-decoration: none;
-  color: black;
-} */
-
-/* .section-container .n-right .n-list .active{
-  background-color: white;
-  color: white;
-  position: fixed;
-  top: 10px;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  margin: 0;
-} */
-
-/* .hamberMenu{
-  color: white;
-  font-size: 23px;
-  cursor: pointer;
-  display: none;
-} */
-
-/* .n-left{
-  flex: 1;
-  align-items: center;
-  display: flex;
-  gap: 2rem;
-} */
-
-/* .n-name{
-  font-size: 1.3rem;
-  font-weight: bold;
-} */
-
-/* .n-right{
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-  font-weight: 400;
-} */
-
-/* .n-list{
-  flex: 10;
-} */
-
-/* .n-list>ul{
-  display: flex;
-  gap: 2rem;
-  margin-right: 4rem;
-} */
-
-/* .n-list > ul > li:hover{
-  cursor: pointer;
-  color: rgb(142, 208, 241);
-} */
-
-/* .n-button{
-  flex: 2;
-} */
-
-/* ul{
-  list-style: none;
-} */
-
-  /* #root{
-    overflow-x: hidden;
-  } */
-  /* .n-wrapper .section-container .n-right{
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    left: -110%;
-    top: 0;
-    background: #111;
-    text-align: center;
-    padding-top: 40px;
-    transition: all 0.3s ease;
-  } */
-
-  /* .n-right .n-list .active{
-    left: 0;
-  } */
-
-  /* .hamberMenu{
-    display: block;
-    color: black;
-    z-index: 999;
-  } */
-
-  /* .navList{
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    left: -120%;
-    top: 0;
-    background: #111;
-    text-align: center;
-    padding-top: 40px;
-    transition: all 0.3s ease;
-    color: white;
-  } */
-  

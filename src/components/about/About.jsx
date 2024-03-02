@@ -13,20 +13,20 @@ const About = () =>{
 
   return (
     <section className="intro" id="intro">
-      <div className="i-left" data-aos="fade-down-right"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2500">
-
+      <div className="i-left" data-aos="fade-down-right" data-aos-easing="ease-out-cubic" data-aos-duration="2500">
+        
         <div className="i-name">
-          <span>Hy! I Am</span>
-          <span>Ankit Kumar</span>
-          <span><strong>and I'm a Frontend Developer</strong></span>
+          <span>Hey there, </span>
+          <span>Ankit here 👋</span>
+          <span>and I'm a Frontend Developer</span>
         </div>
 
         <a className="resume" href="resume.pdf" download="resume.pdf">
-            Download Resume
+          Download Resume
         </a>
+        
         <div className="i-icons">
+        
           <a className="resume" href="https://github.com/rajputankit91" target="_blank">
             <FaGithub />
           </a>
@@ -34,12 +34,12 @@ const About = () =>{
           <a className="resume" href="https://www.linkedin.com/in/ankit-kumar-5180b7283/" target="_blank">
             <FaLinkedinIn />
           </a>
+        
         </div>
+      
       </div>
 
-      <div className="i-right" data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="2500">
+      <div className="i-right" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2500">
         <img src={vector1} />
       </div>
 

@@ -1,5 +1,4 @@
 .mySkills {
-  /* border: solid; */
   margin-top: 50px;
   box-shadow: rgba(33, 35, 38, 0.2) 0px 10px 10px -10px;
 }
@@ -13,7 +12,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* border: solid; */
 }
 .mySkills .column-left {
   display: flex;

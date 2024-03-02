@@ -45,17 +45,15 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: sans-serif;
 }
 
 .App{
-  /* padding: 0.5rem 3.5rem; */
-  /* overflow: hidden; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: black;
-  /* border: solid; */
 }
 
 .button{
@@ -75,8 +73,6 @@
   border: 1px solid rgb(142, 208, 241);
 }
 
-/*  */
-
 html {
   scroll-behavior: smooth;
 }
@@ -87,5 +83,4 @@ a{
 
 section {
   padding: 120px 0;
-  /* min-height: 1000px; */
 }

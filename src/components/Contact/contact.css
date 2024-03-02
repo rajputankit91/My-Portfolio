@@ -1,5 +1,5 @@
 .Contact {
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 .Contact .section-container h1 {
   text-align: center;
@@ -8,16 +8,19 @@
 .Contact .contact-content {
   display: flex;
   justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 .Contact .column-left {
-  /* border: solid; */
   width: 50%;
   padding: 10px;
+}
+.title{
+  margin-bottom: 50px;
 }
 .Contact .column-left .text{
   font-size: 25px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 .Contact .column-left p{
   font-size: 18px;
@@ -40,17 +43,27 @@
   flex-direction: column;
 }
 .Contact .column-right .text {
-  font-size: 30px;
+  font-size: 20px;
   text-align: start;
+  /* margin-bottom: 10px; */
+}
+form{
+  width: 100%;
+  /* border: solid; */
+  /* border-color: #d9d8d8; */
+}
+.fields,.field{
+  width: 100%;
 }
 .Contact form input{
   width: 100%;
   padding: 10px;
   margin-top: 10px;
   border: none;
-  border-bottom: 1px solid #aaaaaa;
+  border: 1px solid #aaaaaa;
   font-size: 20px;
   outline: none;
+  border-radius: 10px;
 }
 .Contact form textarea {
   width: 100%;
@@ -62,9 +75,12 @@
   margin-top: 20px;
   outline: none;
 }
-.Contact .btn {
+form .btn {
   text-align: center;
   margin-top: 20px;
+}
+.Contact .btn button:hover{
+  cursor: pointer;
 }
 .Contact .btn button {
   text-align: center;
@@ -78,30 +94,16 @@
 }
 
 @media screen and (max-width: 981px){
-  .Contact form input{
-      width: 80%;
-  }
-  .Contact form textarea {
-      width: 80%;
+  .Contact form input,.Contact form textarea{
+    width: 80%;
   }
 }
 
 @media screen and (max-width: 781px){
   .Contact .contact-content {
-      flex-direction: column;
+    flex-direction: column;
   }
-  .Contact .column-left {
-      width: 100%;
-      padding-left: 40px;
-  }
-  .Contact .column-right {
-      width: 100%;
-      padding-left: 10px;
-  }
-  .Contact form input{
-      width: 90%;
-  }
-  .Contact form textarea {
-      width: 90%;
+  .Contact .column-left,.Contact .column-right,.Contact form input,.Contact form textarea {
+    width: 100%;
   }
 }
