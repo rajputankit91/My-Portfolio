@@ -5,7 +5,7 @@
   width: 100%;
   box-shadow: rgba(33, 35, 38, 0.2) 0px 10px 10px -10px;
   min-height: 1000px;
-  padding: 0px;
+  padding: 0px 0px 0px 200px;
 }
 
 .intro .i-left,.intro .i-right{
@@ -97,6 +97,10 @@
 }
 
 @media screen and (max-width: 991px){
+  .intro{
+    padding: 0;
+  }
+
   .i-left{
     padding-left: 20px;
   }
@@ -104,8 +108,9 @@
 @media screen and (max-width: 761px){
   .intro{
     flex-direction: column;
-    margin-top: 50px;
+    padding: 0;
   }
+  
   .i-left{
     width: 100%;
     padding-left: 10px;

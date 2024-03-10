@@ -4,13 +4,13 @@ nav {
 
 .navbar{
   position: fixed;
-  width: 100%;
+  width: 80%;
   padding: 10px 0;
   z-index: 999;
   transition: all 0.3s ease;
   font-family: "Ubuntu", sans-serif;
   border-radius: 17px;
-  background-color: rgb(239, 246, 246);
+  background-color: rgba(187, 191, 191,0.4);
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 14px rgba(0,0,0,.05);
   top: 10px;
@@ -58,15 +58,6 @@ nav {
   text-align: -webkit-match-parent;
 }
 
-/* .navList li a {
-  display: block;
-  font-size: 22px;
-  font-weight: 500;
-  margin-left: 25px;
-  color: #fff;
-  transition: color 0.3s ease;
-} */
-
 ul {
   display: block;
   list-style-type: disc;
@@ -110,6 +101,10 @@ ul {
   }
   .intro{
     margin-top: 100px;
+  }
+
+  .navbar{
+    width: 100%;
   }
 
   .section-container .navList{

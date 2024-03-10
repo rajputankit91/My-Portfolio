@@ -17,17 +17,6 @@ const Projects = () =>{
   const projectsData = [
     {
       id: "1",
-      projectsName: "Quiz App",
-      url: quizImage,
-      descriptions:
-        "A website is rendering quiz with next, previous and shows result functionality",
-      githubBtn: "Github",
-      previewBtn: "Preview",
-      gitHubUrl: "https://github.com/aharankit/quizapplication",
-      previewUrl: "https://sparkly-flan-6e912c.netlify.app/",
-    },
-    {
-      id: "2",
       projectsName: "Zepto Clone",
       url: zeptoImage,
       descriptions:
@@ -36,6 +25,16 @@ const Projects = () =>{
       previewBtn: "Preview",
       gitHubUrl: "https://github.com/aharankit/Zepto_app",
       previewUrl: "https://zepto-app.netlify.app/",
+    },
+    {
+      id: "2",
+      projectsName: "Users Management",
+      url: userManagement,
+      descriptions: "A website with rendering with add ,edit and delete functionality.",
+      githubBtn: "Github",
+      previewBtn: "Preview",
+      gitHubUrl: "https://github.com/aharankit/users",
+      previewUrl: "https://usermanagement012024.netlify.app/",
     },
     {
       id: "3",
@@ -49,14 +48,14 @@ const Projects = () =>{
     },
     {
       id: "4",
-      projectsName: "Users Management",
-      url: userManagement,
-      descriptions: "A website with rendering with add ,edit and delete functionality.",
+      projectsName: "Quiz App",
+      url: quizImage,
+      descriptions: "A website is rendering quiz with next, previous and shows result functionality",
       githubBtn: "Github",
       previewBtn: "Preview",
-      gitHubUrl: "https://github.com/aharankit/users",
-      previewUrl: "https://usermanagement012024.netlify.app/",
-    },
+      gitHubUrl: "https://github.com/aharankit/quizapplication",
+      previewUrl: "https://sparkly-flan-6e912c.netlify.app/",
+    }
   ];
   return (
     <section className="projects" id="projects">

@@ -13,7 +13,7 @@ const About = () =>{
 
   return (
     <section className="intro" id="intro">
-      <div className="i-left" data-aos="fade-down-right" data-aos-easing="ease-out-cubic" data-aos-duration="2500">
+      <div className="i-left" data-aos="fade-down-right" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
         
         <div className="i-name">
           <span>Hey there, </span>
@@ -39,7 +39,7 @@ const About = () =>{
       
       </div>
 
-      <div className="i-right" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2500">
+      <div className="i-right" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500">
         <img src={vector1} />
       </div>
 
