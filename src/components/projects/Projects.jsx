@@ -3,6 +3,7 @@ import zeptoImage from "../../images/zeptoImage.png";
 import gridlistImage from "../../images/gridlistImage.png";
 import quizImage from "../../images/quizImage.png";
 import userManagement from "../../images/userManagement.png"
+import foundItImage from "../../images/founditClone.jpg"
 import "./projects.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -60,12 +61,12 @@ const Projects = () =>{
     {
       id: "5",
       projectsName: "Foundit Clone",
-      url: quizImage,
+      url: foundItImage,
       descriptions: "A website is rendering jobs with searching & filtering functionality",
       githubBtn: "Github",
       previewBtn: "Preview",
       gitHubUrl: "https://github.com/rajputankit91/myFoundit",
-      previewUrl: "https://sparkly-flan-6e912c.netlify.app/",
+      previewUrl: "https://lgtjobfinder.netlify.app//",
     }
   ];
   return (
