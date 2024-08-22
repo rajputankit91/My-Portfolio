@@ -22,6 +22,11 @@ nav {
   justify-content: space-between;
 }
 
+.navbar .section-container .n-left{
+  display: flex;
+  justify-content: center;
+}
+
 .section-container {
   max-width: 1300px;
   padding: 0 30px;

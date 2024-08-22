@@ -28,11 +28,11 @@ const About = () =>{
         <div className="i-icons">
         
           <a className="resume" href="https://github.com/rajputankit91" target="_blank">
-            <FaGithub />
+            <FaGithub className="gitHub Icon" />
           </a>
 
           <a className="resume" href="https://www.linkedin.com/in/ankit-kumar-5180b7283/" target="_blank">
-            <FaLinkedinIn />
+            <FaLinkedinIn className="linkedIn Icon" />
           </a>
         
         </div>

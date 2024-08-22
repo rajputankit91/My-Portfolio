@@ -36,6 +36,7 @@ const Projects = () =>{
       gitHubUrl: "https://github.com/aharankit/users",
       previewUrl: "https://usermanagement012024.netlify.app/",
     },
+
     {
       id: "3",
       projectsName: "Grid Table",
@@ -54,6 +55,16 @@ const Projects = () =>{
       githubBtn: "Github",
       previewBtn: "Preview",
       gitHubUrl: "https://github.com/aharankit/quizapplication",
+      previewUrl: "https://sparkly-flan-6e912c.netlify.app/",
+    },
+    {
+      id: "5",
+      projectsName: "Foundit Clone",
+      url: quizImage,
+      descriptions: "A website is rendering jobs with searching & filtering functionality",
+      githubBtn: "Github",
+      previewBtn: "Preview",
+      gitHubUrl: "https://github.com/rajputankit91/myFoundit",
       previewUrl: "https://sparkly-flan-6e912c.netlify.app/",
     }
   ];

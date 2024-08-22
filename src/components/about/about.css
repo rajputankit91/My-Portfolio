@@ -94,6 +94,8 @@
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 991px){
