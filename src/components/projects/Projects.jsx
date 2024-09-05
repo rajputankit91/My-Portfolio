@@ -66,7 +66,7 @@ const Projects = () =>{
       githubBtn: "Github",
       previewBtn: "Preview",
       gitHubUrl: "https://github.com/rajputankit91/myFoundit",
-      previewUrl: "https://lgtjobfinder.netlify.app//",
+      previewUrl: "https://search-board.netlify.app/",
     }
   ];
   return (

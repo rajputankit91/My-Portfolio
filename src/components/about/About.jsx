@@ -19,8 +19,7 @@ const About = () => {
         <div className="i-name">
           <span>Hey there, </span>
           <span>Ankit here 👋</span>
-          {/* <span>and I'm a Frontend Developer</span> */}
-          <span>and I'm a 
+          <span>and I'm a
             <Typewriter
               words={[" Frontend Developer"]}
               loop={500}
