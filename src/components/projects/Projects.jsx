@@ -4,6 +4,7 @@ import gridlistImage from "../../images/gridlistImage.png";
 import quizImage from "../../images/quizImage.png";
 import userManagement from "../../images/userManagement.png"
 import foundItImage from "../../images/founditClone.jpg"
+import multistepForm from "../../images/multistepForm.jpg"
 import "./projects.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -20,8 +21,7 @@ const Projects = () =>{
       id: "1",
       projectsName: "Zepto Clone",
       url: zeptoImage,
-      descriptions:
-        "A website with rendering based on search and cart functionality.",
+      descriptions: "A website with rendering based on search and cart functionality.",
       githubBtn: "Github",
       previewBtn: "Preview",
       gitHubUrl: "https://github.com/aharankit/Zepto_app",
@@ -60,15 +60,26 @@ const Projects = () =>{
     },
     {
       id: "5",
-      projectsName: "Foundit Clone",
+      projectsName: "Job-Board Application",
       url: foundItImage,
       descriptions: "A website is rendering jobs with searching & filtering functionality",
       githubBtn: "Github",
       previewBtn: "Preview",
       gitHubUrl: "https://github.com/rajputankit91/myFoundit",
       previewUrl: "https://search-board.netlify.app/",
+    },
+    {
+      id: "6",
+      projectsName: "Multi-Step Form Validation",
+      url: multistepForm,
+      descriptions: "A multi step form that displays entered details when filled out",
+      githubBtn: "Github",
+      previewBtn: "Preview",
+      gitHubUrl: "https://github.com/rajputankit91/dynamic_form",
+      previewUrl: "https://eloquent-rolypoly-ab8bed.netlify.app/",
     }
   ];
+
   return (
     <section className="projects" id="projects">
       
